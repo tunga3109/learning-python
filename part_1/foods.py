@@ -1,0 +1,29 @@
+my_foods = ['pizza', 'falafel', 'carrot cake']
+friend_foods = my_foods[:] # копирование списка - не буду будут разными после изменения
+
+print("My favorite foods are:")
+print(my_foods)
+print("\nMy friend's favorite foods are:")
+print(friend_foods)
+
+my_foods.append('cannoli') #разные списки
+friend_foods.append('ice cream') #разные списки
+
+print("My favorite foods are:")
+print(my_foods)
+print("\nMy friend's favorite foods are:")
+print(friend_foods)
+
+#Одинаковые списки
+friend_foods = my_foods 
+my_foods.append('cannoli')
+friend_foods.append('ice cream')
+print("My favorite foods are:")
+print(my_foods)
+print("\nMy friend's favorite foods are:")
+print(friend_foods)
+
+my_foods = ['pizza', 'falafel', 'carrot cake']
+print("\nMy friend's favorite foods are:")
+for food in my_foods:
+    print(food)
