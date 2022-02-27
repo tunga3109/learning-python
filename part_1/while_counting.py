@@ -17,3 +17,12 @@ while current_number < 10:
     if current_number % 2 == 0:
         continue # пропускает все числа кратные 2 с помощью continue
     print(current_number)
+
+
+while True:
+    topping = input('Enter topping:')
+    if topping == 'quit':
+        break
+    else:
+        print(f'{topping} has been added')
+    
