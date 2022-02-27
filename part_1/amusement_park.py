@@ -59,3 +59,18 @@ elif age >= 20 and age < 65:
 elif age >= 65:
     pass
 
+fruits = ['banana', 'apple', 'berry', 'peach', 'passion fruit']
+fav_fruits = ['apple', 'passion fruit', 'banana']
+if 'banana' in fruits:  #если есть элемент в списке
+    print('we have this fruit')
+else:
+    print('we do not this one')
+
+
+for fruit in fruits:
+    if fruit in fav_fruits: #если есть элемент во втором списке
+        print(f'we have {fruit}') 
+    else: 
+        print(f'we do not have {fruit}') # те элементы, которых нет в списке
+ 
+
