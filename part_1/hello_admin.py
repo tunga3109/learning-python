@@ -11,3 +11,17 @@ if us:
         print(f'{user} has been added') # если есть элементы в списке
 else:
     print('empty list') # если нет элементов в списке
+
+
+digits = list(range(1,10))
+for digit in digits:
+    if digit == 1:
+        print(f'{digit}st')
+    elif digit == 2:
+        print(f'{digit}nd')
+    elif digit == 3:
+        print(f'{digit}rd')
+    else:
+        print(f'{digit}th')
+
+
