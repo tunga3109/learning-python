@@ -52,3 +52,15 @@ alien_0 = {
     'speed': 'medium'} 
 
 print(f'{ alien_0["color"]}\n{alien_0["points"]}\n{alien_0["speed"]}')
+
+for name in favorite_languages.keys(): # перебор ключей словаря
+    print(name.title())
+
+friends = ['phil', 'sarah']
+for name in favorite_languages.keys():
+    print(name.title())
+
+    if name in friends:
+        language = favorite_languages[name].title()
+        print(f"\t{name.title()}, I see you love {language}!")
+
