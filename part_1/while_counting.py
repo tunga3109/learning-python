@@ -1,4 +1,8 @@
 # цикл while
+from __future__ import barry_as_FLUFL
+from curses.ascii import isdigit
+
+
 current_number = 1
 while current_number <= 5: # пока число меньше 5
     print(current_number)
@@ -18,7 +22,7 @@ while current_number < 10:
         continue # пропускает все числа кратные 2 с помощью continue
     print(current_number)
 
-
+#1
 while True:
     topping = input('Enter topping:')
     if topping == 'quit':
@@ -26,3 +30,40 @@ while True:
     else:
         print(f'{topping} has been added')
     
+#2
+while True:
+    age = int(input('age: '))
+    if age == 0:
+        break
+    elif age <= 3:
+        print('free ticket ')
+    elif age > 3 and age< 12:
+        print('10$')
+    elif age > 12:
+        print('15$')
+#3
+active = True
+list_top = []
+while active:
+    topping = input('topping: ')
+    if topping in list_top:
+        print('exist')
+    else:
+        list_top.append(topping)
+    if topping == 'quit':
+        active = False
+    print(list_top)
+    
+
+
+
+    
+
+    
+    
+    
+    
+   
+
+    
+        
