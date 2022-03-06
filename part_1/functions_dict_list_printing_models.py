@@ -1,6 +1,9 @@
 # Изменение списка в функции
 
 # Список моделей, которые необходимо напечатать.
+from email import message
+
+
 unprinted_designs = ['phone case', 'robot pendant', 'dodecahedron']
 completed_models = []
 # Цикл последовательно печатает каждую модель до конца списка.
@@ -33,3 +36,12 @@ unprinted_designs = ['phone case', 'robot pendant', 'dodecahedron']
 completed_models = []
 print_models(unprinted_designs, completed_models)
 show_completed_models(completed_models)
+
+# ex 1
+
+def show_messages(messages):
+    for message in messages:
+        print(message)
+
+message = ['hello', 'world']
+show_messages(message)
