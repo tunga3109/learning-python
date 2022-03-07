@@ -57,4 +57,4 @@ while True:
     if album == 'q':
         break
     full_1 = make_album(singer, album)
-    print(full_1)
+    print(full_1) 
