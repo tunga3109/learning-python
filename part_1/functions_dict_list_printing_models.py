@@ -64,7 +64,9 @@ print(tunga)
 
 sandwitch('cheezz', 'fkjkjdf', 'dfdfdf')
 
-artem = build_profile('tunga','chan',age='30',occupation='support agent')
+artem = build_profile(
+    'tunga','chan',age='30',
+    occupation='support agent')
 print(artem)
 
 mers = car_model('Mercedes','viano',color='red')
