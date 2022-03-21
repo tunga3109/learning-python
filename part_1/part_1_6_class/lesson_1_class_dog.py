@@ -1,4 +1,5 @@
 # Lesson 1
+
 class Dog():
     """Простая модель собаки."""
 
@@ -24,3 +25,54 @@ print(f"My dog is {my_dog.age} years old.")
 # Вызов методов cо скобками ()
 my_dog.sit() 
 my_dog.roll_over()
+
+#1
+
+class Restaurant():
+
+    def __init__(self, restaurant_name, cuisine_type):
+        self.restaurant_name = restaurant_name
+        self.cuisine_type = cuisine_type
+
+    def describe_restaurant(self):
+        print(f'{self.restaurant_name} is {self.cuisine_type} restaurant')
+     
+    def open_restaurant(self):
+        print(f'{self.restaurant_name} is opened')
+
+
+restaurant = Restaurant('Saigon', 'Vietnamese')
+print(restaurant.restaurant_name)
+print(restaurant.cuisine_type)
+restaurant.describe_restaurant()
+restaurant.open_restaurant()
+
+pizza = Restaurant('Pizza Tempo', 'Italian')
+sushi = Restaurant('Sushi Vesla', 'Japanese')
+burger = Restaurant('McDonalds', 'American')
+
+pizza.describe_restaurant()
+sushi.describe_restaurant()
+burger.describe_restaurant()
+
+#2
+
+class User():
+
+    def __init__(self, first_name, last_name, age, occupation):
+        self.first_name = first_name
+        self.last_name = last_name
+        self.age = age
+        self.occupation = occupation
+
+    def describe_user(self):
+        print(f'{self.first_name}\n{self.last_name}\n{self.age}\n{self.occupation}')
+
+    def greet_user(self):
+        print(f'Welcome to the club, {self.first_name} {self.last_name}')
+
+tchan = User('Chan', 'Tunga', 23, 'Customer support')
+tchan.describe_user()
+tchan.greet_user()        
+
+
