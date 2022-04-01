@@ -19,12 +19,12 @@ class Dog():
 my_dog = Dog('willie', 6) # my_dog - это экземпляр класса
 
 # Обращение к атрибутам без скобок ()
-print(f"My dog's name is {my_dog.name}.") 
-print(f"My dog is {my_dog.age} years old.")
-
+#print(f"My dog's name is {my_dog.name}.") 
+#print(f"My dog is {my_dog.age} years old.")
+#
 # Вызов методов cо скобками ()
-my_dog.sit() 
-my_dog.roll_over()
+#my_dog.sit() 
+#my_dog.roll_over()
 
 #1
 
@@ -48,26 +48,26 @@ class Restaurant():
     def increment_number_served(self, num):
         self.number_served += num
 
-restaurant = Restaurant('Saigon', 'Vietnamese')
-print(restaurant.restaurant_name)
-print(restaurant.cuisine_type)
-restaurant.describe_restaurant()
-restaurant.open_restaurant()
-
-pizza = Restaurant('Pizza Tempo', 'Italian')
-sushi = Restaurant('Sushi Vesla', 'Japanese')
-burger = Restaurant('McDonalds', 'American')
-
-pizza.describe_restaurant()
-sushi.describe_restaurant()
-burger.describe_restaurant()
-
-pizza.set_number_served(8)
-print(pizza.number_served)
-pizza.increment_number_served(10)
-print(pizza.number_served)
-
-
+#restaurant = Restaurant('Saigon', 'Vietnamese')
+#print(restaurant.restaurant_name)
+#print(restaurant.cuisine_type)
+#restaurant.describe_restaurant()
+#restaurant.open_restaurant()
+#
+#pizza = Restaurant('Pizza Tempo', 'Italian')
+#sushi = Restaurant('Sushi Vesla', 'Japanese')
+#burger = Restaurant('McDonalds', 'American')
+#
+#pizza.describe_restaurant()
+#sushi.describe_restaurant()
+#burger.describe_restaurant()
+#
+#pizza.set_number_served(8)
+#print(pizza.number_served)
+#pizza.increment_number_served(10)
+#print(pizza.number_served)
+#
+#
 #2
 
 class User():
@@ -91,16 +91,16 @@ class User():
     def reset_login_attempts(self):
         self.login_attempts -= self.login_attempts
 
-tchan = User('Chan', 'Tunga', 23, 'Customer support')
-tchan.describe_user()
-tchan.greet_user()    
-    
-tchan.increment_login_attempts()
-tchan.increment_login_attempts()
-tchan.increment_login_attempts()
-print(tchan.login_attempts)
-tchan.reset_login_attempts()
-print(tchan.login_attempts)
+#tchan = User('Chan', 'Tunga', 23, 'Customer support')
+#tchan.describe_user()
+#tchan.greet_user()    
+#    
+#tchan.increment_login_attempts()
+#tchan.increment_login_attempts()
+#tchan.increment_login_attempts()
+#print(tchan.login_attempts)
+#tchan.reset_login_attempts()
+#print(tchan.login_attempts)
 
 
 
