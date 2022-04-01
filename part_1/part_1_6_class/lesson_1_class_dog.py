@@ -33,6 +33,8 @@ class Restaurant():
     def __init__(self, restaurant_name, cuisine_type):
         self.restaurant_name = restaurant_name
         self.cuisine_type = cuisine_type
+        self.number_served = 0
+
 
     def describe_restaurant(self):
         print(f'{self.restaurant_name} is {self.cuisine_type} restaurant')
@@ -40,6 +42,11 @@ class Restaurant():
     def open_restaurant(self):
         print(f'{self.restaurant_name} is opened')
 
+    def set_number_served(self, num_of_people):
+        self.number_served = num_of_people
+
+    def increment_number_served(self, num):
+        self.number_served += num
 
 restaurant = Restaurant('Saigon', 'Vietnamese')
 print(restaurant.restaurant_name)
@@ -55,6 +62,12 @@ pizza.describe_restaurant()
 sushi.describe_restaurant()
 burger.describe_restaurant()
 
+pizza.set_number_served(8)
+print(pizza.number_served)
+pizza.increment_number_served(10)
+print(pizza.number_served)
+
+
 #2
 
 class User():
@@ -64,15 +77,30 @@ class User():
         self.last_name = last_name
         self.age = age
         self.occupation = occupation
+        self.login_attempts = 0
 
     def describe_user(self):
         print(f'{self.first_name}\n{self.last_name}\n{self.age}\n{self.occupation}')
 
     def greet_user(self):
         print(f'Welcome to the club, {self.first_name} {self.last_name}')
+    
+    def increment_login_attempts(self):
+        self.login_attempts += 1
+
+    def reset_login_attempts(self):
+        self.login_attempts -= self.login_attempts
 
 tchan = User('Chan', 'Tunga', 23, 'Customer support')
 tchan.describe_user()
-tchan.greet_user()        
+tchan.greet_user()    
+    
+tchan.increment_login_attempts()
+tchan.increment_login_attempts()
+tchan.increment_login_attempts()
+print(tchan.login_attempts)
+tchan.reset_login_attempts()
+print(tchan.login_attempts)
+
 
 
