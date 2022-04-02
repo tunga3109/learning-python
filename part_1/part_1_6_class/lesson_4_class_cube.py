@@ -1,6 +1,4 @@
 #1
-
-
 from random import choice, randint
 
 class Die():
@@ -35,6 +33,35 @@ class Die():
 #    
 #  
 #d = Loterey()
+
+
+# 2
+
+my_ticket = [323,4554,7767,5845,9293]
+attempts = 0
+
+while True:
+    combination = choice(my_ticket)
+    if combination == 4554:
+        attempts += 1
+        print(f'You are winner {combination}')
+        break
+    else:
+        attempts += 1
+        print(f'Try again {combination}')
+
+print(f' Attempts - {attempts}\n {attempts - 1} - Unsuccessfully \n {attempts - (attempts -1)} - Successfully')
+
+
+
+
+    
+
+
+
+    
+    
+    
 
 
         
